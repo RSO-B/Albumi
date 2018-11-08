@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8f0fa8b-ebb9-4720-b3c1-122d51d11ae7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-api/src/main/java/servlet/JPAServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeResources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-api/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-api/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-model/albumimodel.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-model/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-model/src/main/java/entities/Album.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-model/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-model/src/main/resources/sql-scripts/init-album.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-storitve/albumistoritve.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-storitve/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/albumi-storitve/src/main/resources/META-INF/beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SporocilniSistem/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SporocilniSistem/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SporocilniSistem/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/SporocilniSistem.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/api-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/api-1.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/META-INF/kumuluzee/boot-loader.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/com/kumuluz/ee/loader/EeBootLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/com/kumuluz/ee/loader/EeClassLoader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/com/kumuluz/ee/loader/exception/EeClassLoaderException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/com/kumuluz/ee/loader/jar/FileInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/com/kumuluz/ee/loader/jar/JarEntryInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/com/kumuluz/ee/loader/jar/JarFileInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/HikariCP-2.7.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/alpn-api-1.1.3.v20160715.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/asm-6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/asm-analysis-6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/asm-commons-6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/asm-tree-6.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/cdi-api-2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/entitete-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/http2-client-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/http2-common-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/http2-hpack-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/http2-http-client-transport-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/http2-server-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.annotation-api-1.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.el-api-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.interceptor-api-1.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.json-api-1.1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.resource-api-1.7.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/javax.transaction-api-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jboss-annotations-api_1.3_spec-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jboss-classfilewriter-1.2.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jboss-transaction-spi-7.6.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jersey-cdi1x-2.27.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jersey-cdi1x-ban-custom-hk2-binding-2.27.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jersey-jetty-connector-2.27.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-alpn-client-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-alpn-openjdk8-client-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-alpn-openjdk8-server-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-alpn-server-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-annotations-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-client-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-http-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-io-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-jndi-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-plus-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-security-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-server-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-servlet-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-util-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-webapp-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/jetty-xml-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/kumuluzee-cdi-weld-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/kumuluzee-common-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/kumuluzee-core-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/kumuluzee-jpa-common-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/kumuluzee-jpa-eclipselink-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/kumuluzee-jta-common-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/kumuluzee-jta-narayana-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/kumuluzee-servlet-jetty-3.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/narayana-jta-5.9.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/org.eclipse.persistence.antlr-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/org.eclipse.persistence.asm-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/org.eclipse.persistence.core-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/org.eclipse.persistence.jpa-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/org.eclipse.persistence.jpa.jpql-2.7.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/postgresql-42.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/snakeyaml-1.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/storitve-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/weld-api-3.0.SP4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/weld-core-impl-3.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/weld-environment-common-3.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/weld-jsf-3.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/weld-probe-core-3.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/weld-servlet-core-3.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/weld-spi-3.0.SP4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/classes/lib/weld-web-3.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/api/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/entitete/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/entitete/target/entitete-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/entitete/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/storitve/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/storitve/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SporocilniSistem/storitve/target/storitve-1.0-SNAPSHOT.jar" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/albumi-api/target/" />
+    <ignored path="$PROJECT_DIR$/albumi-model/target/" />
+    <ignored path="$PROJECT_DIR$/albumi-storitve/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-415904476">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="165" />
+          <entry key="sql" value="41" />
+          <entry key="xml" value="62" />
+          <entry key="yaml" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="165" />
+          <entry key="SQL" value="41" />
+          <entry key="XML" value="62" />
+          <entry key="YAML" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="5" />
+          <entry key="sql" value="2" />
+          <entry key="xml" value="8" />
+          <entry key="yaml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="5" />
+          <entry key="SQL" value="2" />
+          <entry key="XML" value="8" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-model/src/main/java/entities/Album.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="918">
+              <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+              <folding>
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#554#555#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
+                <element signature="e#619#620#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#681#682#0" expanded="true" />
+                <element signature="e#725#726#0" expanded="true" />
+                <element signature="e#761#762#0" expanded="true" />
+                <element signature="e#792#793#0" expanded="true" />
+                <element signature="e#819#820#0" expanded="true" />
+                <element signature="e#859#860#0" expanded="true" />
+                <element signature="e#891#892#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-model/src/main/resources/sql-scripts/init-album.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#324#325#0" expanded="true" />
+                <element signature="e#396#397#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#508#509#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/resources/META-INF/beans.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/META-INF/beans.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/META-INF/persistence.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="69" lean-forward="true" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/servlet/JPAServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="49">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeResources.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="76" column="53" lean-forward="true" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/albumi-model/pom.xml" />
+        <option value="$PROJECT_DIR$/albumi-storitve/pom.xml" />
+        <option value="$PROJECT_DIR$/albumi-api/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/albumi-model/src/main/java/entities/Album.java" />
+        <option value="$PROJECT_DIR$/albumi-model/src/main/resources/META-INF/persistence.xml" />
+        <option value="$PROJECT_DIR$/albumi-model/src/main/resources/sql-scripts/init-album.sql" />
+        <option value="$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java" />
+        <option value="$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml" />
+        <option value="$PROJECT_DIR$/albumi-api/src/main/java/servlet/JPAServlet.java" />
+        <option value="$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeResources.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1946" />
+    <option name="height" value="2121" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="viri" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Albumi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Albumi" type="462c0819:PsiDirectoryNode" />
+              <item name="albumi-model" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541719622954" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Bostjan\Documents\FRI\1.Letnik\Racunalniske_Storitve_V_Oblaku\DeljenjeKoles\Albumi\albumi-api\src\main\java" />
+      <recent name="C:\Users\Bostjan\Documents\FRI\1.Letnik\Racunalniske_Storitve_V_Oblaku\DeljenjeKoles\Albumi\albumi-api\src\main\resources\META-INF" />
+      <recent name="C:\Users\Bostjan\Documents\FRI\1.Letnik\Racunalniske_Storitve_V_Oblaku\DeljenjeKoles\Albumi\albumi-api\src\main\resources" />
+      <recent name="C:\Users\Bostjan\Documents\FRI\1.Letnik\Racunalniske_Storitve_V_Oblaku\DeljenjeKoles\Albumi\albumi-storitve\src\main\resources" />
+      <recent name="C:\Users\Bostjan\Documents\FRI\1.Letnik\Racunalniske_Storitve_V_Oblaku\DeljenjeKoles\Albumi\albumi-model\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/jdk-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.kumuluz.ee.EeApplication" />
+      <module name="albumiapi" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8f0fa8b-ebb9-4720-b3c1-122d51d11ae7" name="Default Changelist" comment="" />
+      <created>1541718498184</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1541718498184</updated>
+      <workItem from="1541718500634" duration="1178000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1178000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="2208" height="1218" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="JRebel" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info id="Learn" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24976744" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3296501" />
+      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Java Enterprise" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="JRebel Executor" />
+      <window_info anchor="bottom" id="JRebel Console" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3296501" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="CDI" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="JRebel Setup Guide" weight="0.32976744" />
+      <window_info anchor="right" id="Bean Validation" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/albumi-storitve/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="19" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="51" column="40" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-model/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-model/src/main/java/entities/Album.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
+          <folding>
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#554#555#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#681#682#0" expanded="true" />
+            <element signature="e#725#726#0" expanded="true" />
+            <element signature="e#761#762#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#819#820#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+            <element signature="e#891#892#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-model/src/main/resources/sql-scripts/init-album.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="68" selection-start-line="2" selection-start-column="68" selection-end-line="2" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#508#509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/resources/META-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/META-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/servlet/JPAServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="76" column="53" lean-forward="true" selection-start-line="76" selection-start-column="53" selection-end-line="76" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="69" lean-forward="true" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>albumimodel</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-annotations:2.8.11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
