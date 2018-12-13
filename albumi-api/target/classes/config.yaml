@@ -2,14 +2,35 @@ kumuluzee:
   name: rso-album
   version: 1.0.0
   server:
-    base-url: http://localhost:8080
+    base-url: http://localhost:8081
     http:
-      port: 8080
+      port: 8081
   env:
     name: dev
   datasources:
   - jndi-name: jdbc/album
-    connection-url: jdbc:postgresql://192.168.99.100:5432/album
+    connection-url: jdbc:postgresql://192.168.99.100:5432/postgres
     username: postgres
     password: postgres
     max-pool-size: 20
+#  discovery:
+#    etcd:
+#      hosts: http://192.168.99.100:2379
+  config:
+    etcd:
+      hosts: http://192.168.99.100:2379
+  discovery:
+    etcd:
+      hosts: http://192.168.99.100:2379
+  metrics:
+    web-instrumentation:
+    - name: album-endpoint
+      url-pattern: /v1/album/*
+  health:
+    checks:
+      data-source-health-check:
+        jndi-name: jdbc/album
+  app-properties:
+    external-services:
+      enabled: true
+    healthy: true

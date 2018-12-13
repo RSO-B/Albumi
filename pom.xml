@@ -21,6 +21,9 @@
 
         <kumuluzee.version>3.0.0</kumuluzee.version>
         <postgresql.version>42.2.5</postgresql.version>
+        <kumuluzee-config.version>1.1.0</kumuluzee-config.version>
+        <kumuluzee-health.version>1.0.0</kumuluzee-health.version>
+        <kumuluzee-metrics.version>1.1.1</kumuluzee-metrics.version>
     </properties>
 
     <dependencyManagement>
@@ -36,6 +39,41 @@
                 <groupId>org.postgresql</groupId>
                 <artifactId>postgresql</artifactId>
                 <version>${postgresql.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kumuluz.ee.rest</groupId>
+                <artifactId>kumuluzee-rest-core</artifactId>
+                <version>1.2.3</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kumuluz.ee.discovery</groupId>
+                <artifactId>kumuluzee-discovery-etcd</artifactId>
+                <version>1.1.0</version>
+            </dependency>
+            <dependency>
+                <artifactId>kumuluzee-config-etcd</artifactId>
+                <groupId>com.kumuluz.ee.config</groupId>
+                <version>${kumuluzee-config.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.xml.bind</groupId>
+                <artifactId>jaxb-api</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kumuluz.ee.health</groupId>
+                <artifactId>kumuluzee-health</artifactId>
+                <version>${kumuluzee-health.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.googlecode.json-simple</groupId>
+                <artifactId>json-simple</artifactId>
+                <version>1.1</version>
+            </dependency>
+            <dependency>
+                <groupId>com.kumuluz.ee.metrics</groupId>
+                <artifactId>kumuluzee-metrics-core</artifactId>
+                <version>${kumuluzee-metrics.version}</version>
             </dependency>
             <dependency>
                 <groupId>si.fri.rso.albumi</groupId>

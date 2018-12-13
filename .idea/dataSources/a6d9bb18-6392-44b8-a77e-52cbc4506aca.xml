@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="compose@sl-eu-gb-p00.dblayer.com">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.11">
+    <root id="1">
+      <ServerVersion>9.6.10</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="compose">
+      <ObjectId>16391</ObjectId>
+      <Owner>admin</Owner>
+      <IntrospectionStateNumber>105</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="postgres">
+      <ObjectId>13291</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <Owner>focker</Owner>
+    </database>
+    <role id="4" parent="1" name="admin">
+      <ObjectId>16384</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="5" parent="1" name="compose-replication">
+      <ObjectId>16386</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="6" parent="1" name="focker">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="7" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="8" parent="1" name="user-binder">
+      <ObjectId>16385</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="9" parent="2" name="information_schema">
+      <ObjectId>13003</ObjectId>
+      <Owner>focker</Owner>
+    </schema>
+    <schema id="10" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <Owner>focker</Owner>
+    </schema>
+    <schema id="11" parent="2" name="pg_temp_1">
+      <ObjectId>11848</ObjectId>
+      <Owner>focker</Owner>
+    </schema>
+    <schema id="12" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <Owner>focker</Owner>
+    </schema>
+    <schema id="13" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11849</ObjectId>
+      <Owner>focker</Owner>
+    </schema>
+    <schema id="14" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <Owner>focker</Owner>
+      <IntrospectionTimestamp>2018-12-06.10:39:54.062</IntrospectionTimestamp>
+      <IntrospectionStateNumber>1721</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="15" parent="2" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="16" parent="2" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="17" parent="2" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="18" parent="2" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="19" parent="2" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="20" parent="2" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <routine id="21" parent="14" name="compose_session_replication_role">
+      <ObjectId>16387</ObjectId>
+      <Owner>focker</Owner>
+      <SourceTextLength>271</SourceTextLength>
+      <StateNumber>1721</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ArgumentsDefinition>role text</ArgumentsDefinition>
+      <ResultsDefinition>text</ResultsDefinition>
+      <LanguageName>plpgsql</LanguageName>
+      <RoutineKind>function</RoutineKind>
+      <SecurityDefiner>1</SecurityDefiner>
+      <Cost>100.0</Cost>
+    </routine>
+    <routine id="22" parent="14" name="kill_all_connections">
+      <ObjectId>16388</ObjectId>
+      <Owner>focker</Owner>
+      <SourceTextLength>235</SourceTextLength>
+      <StateNumber>1721</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ResultsDefinition>text</ResultsDefinition>
+      <LanguageName>plpgsql</LanguageName>
+      <RoutineKind>function</RoutineKind>
+      <SecurityDefiner>1</SecurityDefiner>
+      <Cost>100.0</Cost>
+    </routine>
+    <routine id="23" parent="14" name="pg_kill_connection">
+      <ObjectId>16389</ObjectId>
+      <Owner>focker</Owner>
+      <SourceTextLength>32</SourceTextLength>
+      <StateNumber>1721</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ArgumentsDefinition>integer</ArgumentsDefinition>
+      <ResultsDefinition>boolean</ResultsDefinition>
+      <LanguageName>sql</LanguageName>
+      <RoutineKind>function</RoutineKind>
+      <SecurityDefiner>1</SecurityDefiner>
+      <Cost>100.0</Cost>
+    </routine>
+    <routine id="24" parent="14" name="upgrade_postgis_23x">
+      <ObjectId>16390</ObjectId>
+      <Owner>focker</Owner>
+      <SourceTextLength>247</SourceTextLength>
+      <StateNumber>1721</StateNumber>
+      <VolatilityKind>volatile</VolatilityKind>
+      <ResultsDefinition>void</ResultsDefinition>
+      <LanguageName>plpgsql</LanguageName>
+      <ConfigurationParameters>search_path=public, pg_temp</ConfigurationParameters>
+      <RoutineKind>function</RoutineKind>
+      <SecurityDefiner>1</SecurityDefiner>
+      <Cost>100.0</Cost>
+    </routine>
+    <argument id="25" parent="21" name="role">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </argument>
+    <argument id="26" parent="21">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0s</DataType>
+    </argument>
+    <argument id="27" parent="22">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>text|0s</DataType>
+    </argument>
+    <argument id="28" parent="23">
+      <Position>1</Position>
+      <DataType>integer|0s</DataType>
+    </argument>
+    <argument id="29" parent="23">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>boolean|0s</DataType>
+    </argument>
+    <argument id="30" parent="24">
+      <ArgumentDirection>R</ArgumentDirection>
+      <DataType>void|0s</DataType>
+    </argument>
+  </database-model>
+</dataSource>

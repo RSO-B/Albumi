@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="compose@sl-eu-gb-p00.dblayer.com" uuid="a6d9bb18-6392-44b8-a77e-52cbc4506aca">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://sl-eu-gb-p00.dblayer.com:16316/compose</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="postgres@192.168.99.100" uuid="4dd1cf72-60aa-416e-8135-c3435d251837">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.99.100:5432/postgres</jdbc-url>
+    </data-source>
+  </component>
+</project>

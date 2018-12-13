@@ -1,6 +1,9 @@
 package entities;
 
+import dtos.Slika;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @NamedQueries(value =
@@ -8,6 +11,7 @@ import javax.persistence.*;
                 @NamedQuery(name = "Album.getAll", query="SELECT s FROM Album s"),
         })
 public class Album {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -16,7 +20,8 @@ public class Album {
 
     private String opis;
 
-    //List slik
+//    @Transient
+    private List<Slika> slikeList;
 
 
     public Album(String naslov, String opis) {
@@ -51,12 +56,21 @@ public class Album {
         this.opis = opis;
     }
 
+    public List<Slika> getSlikeList() {
+        return slikeList;
+    }
+
+    public void setSlikeList(List<Slika> slikeList) {
+        this.slikeList = slikeList;
+    }
+
     @Override
     public String toString() {
         return "Album{" +
                 "id=" + id +
                 ", naslov='" + naslov + '\'' +
                 ", opis='" + opis + '\'' +
+                ", slikeList=" + slikeList +
                 '}';
     }
 }
