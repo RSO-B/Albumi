@@ -9,6 +9,7 @@ import java.util.List;
 @NamedQueries(value =
         {
                 @NamedQuery(name = "Album.getAll", query="SELECT s FROM Album s"),
+                @NamedQuery(name = "Album.findByUporabnik", query="SELECT s FROM Album s WHERE s.uporabnik_id = :uporabnik_id")
         })
 public class Album {
 
@@ -23,13 +24,31 @@ public class Album {
 //    @Transient
     private List<Slika> slikeList;
 
+    @Column(name = "uporabnik_id")
+    private String uporabnik_id;
 
-    public Album(String naslov, String opis) {
+    public Album(String naslov, String opis, List<Slika> slikeList, String uporabnik_id) {
         this.naslov = naslov;
         this.opis = opis;
+        this.slikeList = slikeList;
+        this.uporabnik_id = uporabnik_id;
+    }
+
+    public Album(String naslov, String opis, List<Slika> slikeList) {
+        this.naslov = naslov;
+        this.opis = opis;
+        this.slikeList = slikeList;
     }
 
     public Album() {
+    }
+
+    public String getUporabnik_id() {
+        return uporabnik_id;
+    }
+
+    public void setUporabnik_id(String uporabnik_id) {
+        this.uporabnik_id = uporabnik_id;
     }
 
     public Integer getId() {
@@ -71,6 +90,7 @@ public class Album {
                 ", naslov='" + naslov + '\'' +
                 ", opis='" + opis + '\'' +
                 ", slikeList=" + slikeList +
+                ", uporabnik_id='" + uporabnik_id + '\'' +
                 '}';
     }
 }

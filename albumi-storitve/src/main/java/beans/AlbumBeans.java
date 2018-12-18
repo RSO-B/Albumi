@@ -52,16 +52,14 @@ public class AlbumBeans {
     @DiscoverService("rso-slike")
     private Optional<String> baseUrl;
 
-
     @PostConstruct
     private void init() {
         httpClient = ClientBuilder.newClient();
-//        baseUrl = "http://localhost:8080"; // only for demonstration
     }
 
     @PreDestroy
     public void reset() {
-        log.log(Level.INFO, "Uničenje AlbumBeans zrno");
+        log.log(Level.INFO, "Uničenje UporabnikBeans zrno");
     }
 
     public List<Album> getAlbumList(QueryParameters query) {
@@ -114,10 +112,10 @@ public class AlbumBeans {
             json.put("opis", slika.getOpis());
             json.put("path", slika.getPath());
 
-            if (appProperties.isExternalServicesEnabled() && baseUrl.isPresent()) {
+            if (appProperties.isExternalServicesEnabled() && !appProperties.getUrlSlike().isEmpty() /*&& baseUrl.isPresent()*/) {
                 try {
                     httpClient
-                            .target(baseUrl.get() + "/v1/slike/")
+                            .target(appProperties.getUrlSlike() + "/v1/slike/")
                             .request()
                             .build("POST", Entity.json(json))
                             .invoke();
@@ -140,10 +138,10 @@ public class AlbumBeans {
             json.put("opis", slika.getOpis());
             json.put("path", slika.getPath());
 
-            if (appProperties.isExternalServicesEnabled() && baseUrl.isPresent()) {
+            if (appProperties.isExternalServicesEnabled() && !appProperties.getUrlSlike().isEmpty() /*&& baseUrl.isPresent()*/) {
                 try {
                     httpClient
-                            .target(baseUrl.get() + "/v1/slike/")
+                            .target(appProperties.getUrlSlike() + "/v1/slike/")
                             .request()
                             .build("POST", Entity.json(json))
                             .invoke();
@@ -203,10 +201,10 @@ public class AlbumBeans {
     @Fallback(fallbackMethod = "getSlikaFallback")
     public List<Slika> getSlikaList(Integer album_id) {
 
-        if (appProperties. isExternalServicesEnabled() && baseUrl.isPresent()) {
+        if (appProperties. isExternalServicesEnabled() && !appProperties.getUrlSlike().isEmpty() /*&& baseUrl.isPresent()*/) {
             try {
                 return httpClient
-                        .target(baseUrl.get() + "/v1/slike?filter=album_id:EQ:" + album_id)
+                        .target(appProperties.getUrlSlike() + "/v1/slike?filter=album_id:EQ:" + album_id)
                         .request().get(new GenericType<List<Slika>>() {
                         });
             } catch (WebApplicationException | ProcessingException e) {
