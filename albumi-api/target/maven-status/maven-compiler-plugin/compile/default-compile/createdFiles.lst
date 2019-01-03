@@ -1,2 +1,4 @@
-v1\viri\AlbumResources.class
 v1\viri\AlbumApplication.class
+v1\viri\AlbumResources.class
+META-INF\services\javax.ws.rs.core.Application
+v1\viri\health\MyHealthCheck.class

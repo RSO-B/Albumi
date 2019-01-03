@@ -1,6 +1,7 @@
 package v1.viri;
 
 import beans.AlbumBeans;
+import com.kumuluz.ee.logs.cdi.Log;
 import com.kumuluz.ee.rest.beans.QueryParameters;
 import dtos.Slika;
 import entities.Album;
@@ -14,6 +15,7 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 import java.util.List;
 
+@Log
 @ApplicationScoped
 @Path("/album")
 @Produces(MediaType.APPLICATION_JSON)
