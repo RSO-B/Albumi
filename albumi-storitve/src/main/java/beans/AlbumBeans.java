@@ -112,10 +112,10 @@ public class AlbumBeans {
             json.put("opis", slika.getOpis());
             json.put("path", slika.getPath());
 
-            if (appProperties.isExternalServicesEnabled() && !appProperties.getUrlSlike().isEmpty() /*&& baseUrl.isPresent()*/) {
+            if (appProperties.isExternalServicesEnabled() && baseUrl.isPresent()) {
                 try {
                     httpClient
-                            .target(appProperties.getUrlSlike() + "/v1/slike/")
+                            .target(baseUrl.get() + "/v1/slike/")
                             .request()
                             .build("POST", Entity.json(json))
                             .invoke();
@@ -138,10 +138,10 @@ public class AlbumBeans {
             json.put("opis", slika.getOpis());
             json.put("path", slika.getPath());
 
-            if (appProperties.isExternalServicesEnabled() && !appProperties.getUrlSlike().isEmpty() /*&& baseUrl.isPresent()*/) {
+            if (appProperties.isExternalServicesEnabled() && baseUrl.isPresent()) {
                 try {
                     httpClient
-                            .target(appProperties.getUrlSlike() + "/v1/slike/")
+                            .target(baseUrl.get() + "/v1/slike/")
                             .request()
                             .build("POST", Entity.json(json))
                             .invoke();
@@ -197,14 +197,14 @@ public class AlbumBeans {
     }
 
     @CircuitBreaker(requestVolumeThreshold = 3)
-    @Timeout(value = 2,unit = ChronoUnit.SECONDS)
+    @Timeout(value = 20,unit = ChronoUnit.SECONDS)
     @Fallback(fallbackMethod = "getSlikaFallback")
     public List<Slika> getSlikaList(Integer album_id) {
 
-        if (appProperties. isExternalServicesEnabled() && !appProperties.getUrlSlike().isEmpty() /*&& baseUrl.isPresent()*/) {
+        if (appProperties. isExternalServicesEnabled() && baseUrl.isPresent()) {
             try {
                 return httpClient
-                        .target(appProperties.getUrlSlike() + "/v1/slike?filter=album_id:EQ:" + album_id)
+                        .target(baseUrl.get() + "/v1/slike?filter=album_id:EQ:" + album_id)
                         .request().get(new GenericType<List<Slika>>() {
                         });
             } catch (WebApplicationException | ProcessingException e) {
