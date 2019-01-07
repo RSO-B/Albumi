@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8f0fa8b-ebb9-4720-b3c1-122d51d11ae7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-api/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-api/src/main/java/servlet/JPAServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/SlikeResources.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-api/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-api/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-model/albumimodel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-model/albumimodel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-model/src/main/java/entities/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-model/src/main/java/entities/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-model/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-model/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-model/src/main/resources/sql-scripts/init-album.sql" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-model/src/main/resources/sql-scripts/init-album.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-storitve/albumistoritve.iml" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-storitve/albumistoritve.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/albumi-storitve/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-storitve/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SporocilniSistem/.idea/.name" beforeDir="false" />
@@ -117,7 +101,6 @@
       <change beforePath="$PROJECT_DIR$/../SporocilniSistem/storitve/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SporocilniSistem/storitve/target/maven-archiver/pom.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../SporocilniSistem/storitve/target/storitve-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../UporabniskiProfil/uporabniskiProfil-services/src/main/java/beans/UporabnikBeans.java" beforeDir="false" afterPath="$PROJECT_DIR$/../UporabniskiProfil/uporabniskiProfil-services/src/main/java/beans/UporabnikBeans.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -189,7 +172,7 @@
         <counts>
           <entry key="Dockerfile" value="22" />
           <entry key="dummy" value="16" />
-          <entry key="java" value="1859" />
+          <entry key="java" value="1862" />
           <entry key="sql" value="59" />
           <entry key="xml" value="108" />
           <entry key="yaml" value="244" />
@@ -199,7 +182,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Dockerfile" value="22" />
-          <entry key="JAVA" value="1859" />
+          <entry key="JAVA" value="1862" />
           <entry key="PLAIN_TEXT" value="16" />
           <entry key="SQL" value="59" />
           <entry key="XML" value="108" />
@@ -210,7 +193,7 @@
         <counts>
           <entry key="Dockerfile" value="3" />
           <entry key="class" value="4" />
-          <entry key="java" value="26" />
+          <entry key="java" value="27" />
           <entry key="sql" value="8" />
           <entry key="xml" value="20" />
           <entry key="yaml" value="7" />
@@ -221,7 +204,7 @@
         <counts>
           <entry key="CLASS" value="4" />
           <entry key="Dockerfile" value="3" />
-          <entry key="JAVA" value="26" />
+          <entry key="JAVA" value="27" />
           <entry key="SQL" value="6" />
           <entry key="Scratch" value="2" />
           <entry key="XML" value="20" />
@@ -260,10 +243,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/health/MyHealthCheck.java">
+        <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/java/configuration/AppProperties.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -289,11 +272,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="199" column="8" lean-forward="true" selection-start-line="199" selection-start-column="8" selection-end-line="199" selection-end-column="8" />
+            <state relative-caret-position="292">
+              <caret line="208" column="53" lean-forward="true" selection-start-line="208" selection-start-column="53" selection-end-line="208" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1716#1717#0" expanded="true" />
@@ -303,7 +286,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -375,8 +358,8 @@
         <option value="$PROJECT_DIR$/kubernetes/kubernetes.yaml" />
         <option value="$PROJECT_DIR$/docker-compose.yml" />
         <option value="$PROJECT_DIR$/albumi-storitve/pom.xml" />
-        <option value="$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java" />
         <option value="$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml" />
+        <option value="$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java" />
       </list>
     </option>
   </component>
@@ -645,18 +628,18 @@
       <workItem from="1546841231842" duration="960000" />
       <workItem from="1546842285208" duration="1105000" />
       <workItem from="1546843715690" duration="5095000" />
-      <workItem from="1546884370844" duration="4537000" />
+      <workItem from="1546884370844" duration="6316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80439000" />
+    <option name="totallyTimeSpent" value="82218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1293" height="1416" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3373885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3373885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="JRebel" order="3" side_tool="true" />
@@ -667,8 +650,8 @@
       <window_info id="Learn" order="8" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32997677" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26734218" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39969015" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.26734218" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3990647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -840,13 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/java/configuration/AppProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/health/MyHealthCheck.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -875,16 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/AlbumResources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-716">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kubernetes/kubernetes.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -906,22 +872,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/java/v1/viri/AlbumResources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-716">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/java/configuration/AppProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/albumi-storitve/src/main/java/beans/AlbumBeans.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="199" column="8" lean-forward="true" selection-start-line="199" selection-start-column="8" selection-end-line="199" selection-end-column="8" />
+        <state relative-caret-position="292">
+          <caret line="208" column="53" lean-forward="true" selection-start-line="208" selection-start-column="53" selection-end-line="208" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1716#1717#0" expanded="true" />
             <element signature="e#1770#1771#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/albumi-api/src/main/resources/config.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="26" selection-end-column="19" />
         </state>
       </provider>
     </entry>

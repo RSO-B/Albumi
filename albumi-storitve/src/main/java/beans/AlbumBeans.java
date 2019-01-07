@@ -203,10 +203,10 @@ public class AlbumBeans {
     @Fallback(fallbackMethod = "getSlikaFallback")
     public List<Slika> getSlikaList(Integer album_id) {
 
-        if (appProperties. isExternalServicesEnabled() && baseUrl.isPresent()) {
+        if (appProperties. isExternalServicesEnabled()) {
             try {
                 return httpClient
-                        .target(baseUrl.get() + "/v1/slike?filter=album_id:EQ:" + album_id)
+                        .target(appProperties.getUrlSlike() + "/v1/slike?filter=album_id:EQ:" + album_id)
                         .request().get(new GenericType<List<Slika>>() {
                         });
             } catch (WebApplicationException | ProcessingException e) {
