@@ -19,14 +19,12 @@ kumuluzee:
   discovery:
     etcd:
       hosts: http://192.168.99.100:2379
-#  metrics:
-#    web-instrumentation:
-#    - name: album-endpoint
-#      url-pattern: /v1/album/*
-#  health:
-#    checks:
-#      data-source-health-check:
-#        jndi-name: jdbc/album
+  metrics:
+    web-instrumentation:
+    - name: album-endpoint
+      url-pattern: /v1/album/*
+    servlet:
+      enabled: true
   app-properties:
     external-services:
       enabled: true

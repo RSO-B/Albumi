@@ -9,6 +9,7 @@ import entities.Album;
 import org.eclipse.microprofile.faulttolerance.CircuitBreaker;
 import org.eclipse.microprofile.faulttolerance.Fallback;
 import org.eclipse.microprofile.faulttolerance.Timeout;
+import org.eclipse.microprofile.metrics.annotation.Timed;
 import org.json.simple.JSONObject;
 
 import javax.annotation.PostConstruct;
@@ -196,6 +197,7 @@ public class AlbumBeans {
 
     }
 
+    @Timed
     @CircuitBreaker(requestVolumeThreshold = 3)
     @Timeout(value = 20,unit = ChronoUnit.SECONDS)
     @Fallback(fallbackMethod = "getSlikaFallback")
